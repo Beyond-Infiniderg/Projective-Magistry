@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "projectivemagistry:item/icy_needle"
+  }
+}

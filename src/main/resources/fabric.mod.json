@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "projectivemagistry",
+	"version": "0.0.1",
+	"name": "Projective Magistry",
+	"description": "A Spiritual Successor to Witchery and Bewitchment",
+	"authors": [
+		"DergNoises"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/projectivemagistry/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"derg.projectivemagistry.ProjectiveMagistry"
+		],
+		"client": [
+			"derg.projectivemagistry.ProjectiveMagistryClient"
+		]
+	},
+	"mixins": [
+		"projectivemagistry.mixins.json",
+		{
+			"config": "projectivemagistry.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
