@@ -1,4 +1,4 @@
-package Items;
+package derg.projectivemagistry.common.registry;
 
 import derg.projectivemagistry.ProjectiveMagistry;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;

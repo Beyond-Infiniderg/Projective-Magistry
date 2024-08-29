@@ -1,6 +1,6 @@
 package derg.projectivemagistry;
 
-import Items.ModItems;
+import derg.projectivemagistry.common.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
