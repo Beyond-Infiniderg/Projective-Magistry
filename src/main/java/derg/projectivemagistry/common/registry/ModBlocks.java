@@ -6,7 +6,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -27,7 +26,30 @@ public class ModBlocks {
                     .ticksRandomly()
                     .requiresTool()
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-
+    public static final Block SILVER_BLOCK =registerBlock("silver_block",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LIGHT_BLUE_GRAY)
+                    .strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.METAL)));
+    public static final Block RAW_SILVER_BLOCK =registerBlock("raw_silver_block",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LIGHT_BLUE_GRAY)
+                    .strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block SILVER_ORE =registerBlock("silver_ore",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LIGHT_GRAY)
+                    .strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block DEEPSLATE_SILVER_ORE =registerBlock("silver_ore_deepslate",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LIGHT_GRAY)
+                    .strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

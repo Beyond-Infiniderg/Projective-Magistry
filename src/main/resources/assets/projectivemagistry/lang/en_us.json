@@ -18,6 +18,10 @@
 
   "block.projectivemagistry.leyline_crystal_block": "Leyline Crystal Block",
   "block.projectivemagistry.budding_leyline_crystal": "Budding Leyline Crystal Block",
+  "block.projectivemagistry.silver_block": "Silver Block",
+  "block.projectivemagistry.raw_silver_block": "Raw Silver Block",
+  "block.projectivemagistry.silver_ore": "Silver Ore",
+  "block.projectivemagistry.silver_ore_deepslate": "Deepslate Silver Ore",
 
   "itemgroup.projectivemagistry.projective_magistry_items": "Projective Magistry"
 }

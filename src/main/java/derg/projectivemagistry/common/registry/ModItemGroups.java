@@ -29,6 +29,10 @@ public class ModItemGroups {
                         entries.add(ModItems.SILVER_SWORD);
                         entries.add(ModItems.LEYLINE_CRYSTAL);
                         entries.add(ModBlocks.LEYLINE_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.SILVER_BLOCK);
+                        entries.add(ModBlocks.RAW_SILVER_BLOCK);
+                        entries.add(ModBlocks.SILVER_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
                     }).build());
 
     public static void registerItemGroups(){
