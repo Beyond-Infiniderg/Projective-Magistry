@@ -1,5 +1,7 @@
 package derg.projectivemagistry;
 
+import derg.projectivemagistry.common.registry.ModBlocks;
+import derg.projectivemagistry.common.registry.ModItemGroups;
 import derg.projectivemagistry.common.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -19,7 +21,9 @@ public class ProjectiveMagistry implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModItemGroups.registerItemGroups();
 		ModItems.initialize();
-		LOGGER.info("FUCK IT WE BALL FUCK IT WE BALL FUCK IT WE BALL");
+		ModBlocks.registerModBlocks();
+		LOGGER.info("Loading Projective Magistry!");
 	}
 }

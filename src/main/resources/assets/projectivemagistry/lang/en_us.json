@@ -1,4 +1,23 @@
 {
   "item.projectivemagistry.icy_needle": "Icy Needle",
-  "item.projectivemagistry.suspicious_substance": "Suspicious Substance"
+  "item.projectivemagistry.suspicious_substance": "Suspicious Substance",
+  "item.projectivemagistry.raw_silver": "Raw Silver",
+  "item.projectivemagistry.silver_ingot": "Silver Ingot",
+  "item.projectivemagistry.silver_nugget": "Silver Nugget",
+  "item.projectivemagistry.silver_sword": "Silver Sword",
+  "item.projectivemagistry.athame": "Athame",
+  "item.projectivemagistry.leyline_crystal": "Leyline Crystal",
+  "item.projectivemagistry.chalk_normal": "Chalk",
+  "item.projectivemagistry.chalk_ender": "Ender Attuned Chalk",
+  "item.projectivemagistry.chalk_golden": "Golden Chalk",
+  "item.projectivemagistry.chalk_nether": "Nether Attuned Chalk",
+  "item.projectivemagistry.chalk_remnant": "Remnant Attuned Chalk",
+  "item.projectivemagistry.demon_heart": "Demon Heart",
+  "item.projectivemagistry.dog_tongue": "Dog Tongue",
+  "item.projectivemagistry.blood_vial": "Blood Vial",
+
+  "block.projectivemagistry.leyline_crystal_block": "Leyline Crystal Block",
+  "block.projectivemagistry.budding_leyline_crystal": "Budding Leyline Crystal Block",
+
+  "itemgroup.projectivemagistry.projective_magistry_items": "Projective Magistry"
 }
