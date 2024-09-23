@@ -23,6 +23,7 @@ public class ProjectiveMagistry implements ModInitializer {
 		// Proceed with mild caution.
 		ModItemGroups.registerItemGroups();
 		ModItems.initialize();
+		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		LOGGER.info("Loading Projective Magistry!");
 	}
