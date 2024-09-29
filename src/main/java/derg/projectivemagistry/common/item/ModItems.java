@@ -72,4 +72,7 @@ public class ModItems {
 
                 });
     }
+    public static void registerModItems() {
+        ProjectiveMagistry.LOGGER.info("Registering Mod Items For " + ProjectiveMagistry.MOD_ID);
+    }
 }
