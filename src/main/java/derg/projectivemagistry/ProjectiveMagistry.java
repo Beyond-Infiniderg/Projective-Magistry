@@ -1,12 +1,13 @@
 package derg.projectivemagistry;
 
-import derg.projectivemagistry.common.registry.ModBlocks;
+import derg.projectivemagistry.common.block.ModBlocks;
 import derg.projectivemagistry.common.registry.ModItemGroups;
-import derg.projectivemagistry.common.registry.ModItems;
+import derg.projectivemagistry.common.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 public class ProjectiveMagistry implements ModInitializer {
 	public static final String MOD_ID = "projectivemagistry";

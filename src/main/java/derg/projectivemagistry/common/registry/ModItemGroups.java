@@ -1,6 +1,8 @@
 package derg.projectivemagistry.common.registry;
 
 import derg.projectivemagistry.ProjectiveMagistry;
+import derg.projectivemagistry.common.block.ModBlocks;
+import derg.projectivemagistry.common.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
