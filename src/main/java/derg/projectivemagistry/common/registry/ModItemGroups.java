@@ -35,6 +35,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
+                        entries.add(ModBlocks.KILN_BLOCK);
                     }).build());
 
     public static void registerItemGroups(){
