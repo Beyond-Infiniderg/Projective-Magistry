@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "projectivemagistry:leyline_crystal"
+    },
+    "@": {
+      "item": "minecraft:furnace"
+    },
+    "%": {
+      "item": "minecraft:brick"
+    }
+  },
+  "pattern": [
+    "%%%",
+    "%@%",
+    "%#%"
+  ],
+  "result": {
+    "count": 1,
+    "id": "projectivemagistry:kiln_block"
+  }
+}
