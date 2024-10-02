@@ -1,3 +1,4 @@
+/*
 package derg.projectivemagistry.common.registry;
 
 
@@ -43,3 +44,4 @@ public class ProjectiveMagistryRecipeTypes {
     }
 }
 
+*/

@@ -1,3 +1,4 @@
+/*
 package derg.projectivemagistry.common.recipe;
 
 
@@ -26,3 +27,4 @@ public class KilnCookingRecipe extends AbstractCookingRecipe{
     }
 }
 
+*/
