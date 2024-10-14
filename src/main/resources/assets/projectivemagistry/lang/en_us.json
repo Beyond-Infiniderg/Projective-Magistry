@@ -23,6 +23,18 @@
   "block.projectivemagistry.silver_ore": "Silver Ore",
   "block.projectivemagistry.silver_ore_deepslate": "Deepslate Silver Ore",
   "block.projectivemagistry.kiln_block": "Kiln",
+  "block.projectivemagistry.ash_leaves": "Ash Leaves",
+  "block.projectivemagistry.ash_wood": "Ash Wood",
+  "block.projectivemagistry.ash_sapling": "Ash Sapling",
+  "block.projectivemagistry.holly_leaves": "Holly Leaves",
+  "block.projectivemagistry.holly_wood": "Holly Wood",
+  "block.projectivemagistry.holly_sapling": "Holly Sapling",
+  "block.projectivemagistry.yew_leaves": "Yew Leaves",
+  "block.projectivemagistry.yew_wood": "Yew Wood",
+  "block.projectivemagistry.yew_sapling": "Yew Sapling",
+  "block.projectivemagistry.hazel_leaves": "Hazel Leaves",
+  "block.projectivemagistry.hazel_wood": "Hazel Wood",
+  "block.projectivemagistry.hazel_sapling": "Hazel Sapling",
 
   "itemgroup.projectivemagistry.projective_magistry_items": "Projective Magistry"
 }
