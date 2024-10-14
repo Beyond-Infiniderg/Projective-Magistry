@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.minecraft.util.Identifier;//86
 
 public class ModItemGroups {
     public static final ItemGroup PROJECTIVE_MAGISTRY_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -36,6 +36,20 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SILVER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
                         entries.add(ModBlocks.KILN_BLOCK);
+                        entries.add(ModBlocks.HAZEL_WOOD);
+                        entries.add(ModBlocks.HAZEL_LEAVES);
+                        entries.add(ModBlocks.HAZEL_SAPLING);
+                        entries.add(ModBlocks.ASH_WOOD);
+                        entries.add(ModBlocks.ASH_LEAVES);
+                        entries.add(ModBlocks.ASH_SAPLING);
+                        entries.add(ModBlocks.HOLLY_WOOD);
+                        entries.add(ModBlocks.HOLLY_LEAVES);
+                        entries.add(ModBlocks.HOLLY_SAPLING);
+                        entries.add(ModBlocks.YEW_WOOD);
+                        entries.add(ModBlocks.YEW_LEAVES);
+                        entries.add(ModBlocks.YEW_SAPLING);
+
+
                     }).build());
 
     public static void registerItemGroups(){
