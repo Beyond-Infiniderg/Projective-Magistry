@@ -81,6 +81,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     //map color ?
                     .strength(0f)
+                    .ticksRandomly()
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block ASH_WOOD =registerBlock("ash_wood",
@@ -98,6 +99,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     //map color ?
                     .strength(0f)
+                    .ticksRandomly()
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block HOLLY_WOOD =registerBlock("holly_wood",
@@ -116,6 +118,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     //map color ?
                     .strength(0f)
+                    .ticksRandomly()
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block YEW_WOOD =registerBlock("yew_wood",
@@ -133,6 +136,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     //map color ?
                     .strength(0f)
+                    .ticksRandomly()
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
 
