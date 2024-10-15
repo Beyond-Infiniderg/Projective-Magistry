@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "projectivemagistry:block/ash_wood"
+    "all": "projectivemagistry:block/yew_leaves"
   }
 }

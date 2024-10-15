@@ -121,13 +121,13 @@ public class ModBlocks {
                     .ticksRandomly()
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
-    public static final Block YEW_WOOD =registerBlock("yew_wood",
+    public static final Block YEW_WOOD =registerBlock("yew_wood.json",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.LIGHT_GRAY)
                     .strength(1f)
                     .sounds(BlockSoundGroup.WOOD)));
 
-    public static final Block YEW_LEAVES =registerBlock("yew_leaves",
+    public static final Block YEW_LEAVES =registerBlock("yew_leaves.json",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.GREEN)
                     .strength(0.2f)
