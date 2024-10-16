@@ -78,6 +78,10 @@ public class ModBlocks {
                     .mapColor(MapColor.GREEN)
                     .strength(0.2f)
                     .burnable()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
 
     public static final Block HAZEL_SAPLING =registerBlock( "hazel_sapling",
@@ -87,6 +91,10 @@ public class ModBlocks {
                     .nonOpaque()
                     .requiresTool()
                     .burnable()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block ASH_WOOD =registerBlock("ash_wood",
@@ -101,6 +109,10 @@ public class ModBlocks {
                     .mapColor(MapColor.YELLOW)
                     .strength(0.2f)
                     .burnable()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
     public static final Block ASH_SAPLING =registerBlock( "ash_sapling",
             new Block(AbstractBlock.Settings.create()
