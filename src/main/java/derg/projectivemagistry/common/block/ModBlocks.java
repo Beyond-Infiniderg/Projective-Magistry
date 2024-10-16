@@ -4,7 +4,10 @@ import derg.projectivemagistry.ProjectiveMagistry;
 import derg.projectivemagistry.common.block.Kiln.kiln_block;
 import derg.projectivemagistry.common.block.crystal.budding_crystal_block;
 import derg.projectivemagistry.common.block.crystal.crystal_block;
-import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -63,13 +66,11 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.DEEPSLATE)));
     //trees and leaves
 
-
     public static final Block HAZEL_WOOD =registerBlock("hazel_wood",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.BROWN)
                     .strength(1f)
                     .burnable()
-
                     .sounds(BlockSoundGroup.WOOD)));
 
     public static final Block HAZEL_LEAVES =registerBlock("hazel_leaves",
@@ -77,13 +78,7 @@ public class ModBlocks {
                     .mapColor(MapColor.GREEN)
                     .strength(0.2f)
                     .burnable()
-                    .ticksRandomly()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
-
 
     public static final Block HAZEL_SAPLING =registerBlock( "hazel_sapling",
             new Block(AbstractBlock.Settings.create()
@@ -92,10 +87,6 @@ public class ModBlocks {
                     .nonOpaque()
                     .requiresTool()
                     .burnable()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block ASH_WOOD =registerBlock("ash_wood",
@@ -105,7 +96,12 @@ public class ModBlocks {
                     .burnable()
                     .sounds(BlockSoundGroup.WOOD)));
 
-
+    public static final Block ASH_LEAVES =registerBlock("ash_leaves",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.YELLOW)
+                    .strength(0.2f)
+                    .burnable()
+                    .sounds(BlockSoundGroup.AZALEA_LEAVES)));
     public static final Block ASH_SAPLING =registerBlock( "ash_sapling",
             new Block(AbstractBlock.Settings.create()
                     //map color ?
@@ -114,10 +110,6 @@ public class ModBlocks {
                     .nonOpaque()
                     .requiresTool()
                     .burnable()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block HOLLY_WOOD =registerBlock("holly_wood",
@@ -132,28 +124,16 @@ public class ModBlocks {
                     .mapColor(MapColor.GREEN)
                     .strength(0.2f)
                     .burnable()
-                    .ticksRandomly()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
 
     public static final Block HOLLY_SAPLING =registerBlock( "holly_sapling",
-            new Block(
-            //        generator:null,
-                    AbstractBlock.Settings.create()
+            new Block(AbstractBlock.Settings.create()
                     //map color ?
                     .strength(0f)
                     .ticksRandomly()
                     .nonOpaque()
                     .requiresTool()
                     .burnable()
-                    .ticksRandomly()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block YEW_WOOD =registerBlock("yew_wood",
@@ -167,28 +147,20 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.GREEN).burnable()
                     .strength(0.2f)
-                    .ticksRandomly()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
     public static final Block YEW_SAPLING =registerBlock( "yew_sapling",
             new Block(AbstractBlock.Settings.create()
-
+                    //map color ?
                     .strength(0f)
                     .ticksRandomly()
                     .nonOpaque()
                     .requiresTool()
-                    .ticksRandomly()
                     .allowsSpawning(Blocks::canSpawnOnLeaves)
                     .suffocates(Blocks::never)
                     .blockVision(Blocks::never)
                     .solidBlock(Blocks::never)
-
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
-    }
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
