@@ -69,49 +69,60 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.BROWN)
                     .strength(1f)
+                    .burnable()
                     .sounds(BlockSoundGroup.WOOD)));
 
     public static final Block HAZEL_LEAVES =registerBlock("hazel_leaves",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.GREEN)
                     .strength(0.2f)
+                    .burnable()
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
 
     public static final Block HAZEL_SAPLING =registerBlock( "hazel_sapling",
             new Block(AbstractBlock.Settings.create()
-                    //map color ?
                     .strength(0f)
                     .ticksRandomly()
+                    .nonOpaque()
+                    .requiresTool()
+                    .burnable()
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block ASH_WOOD =registerBlock("ash_wood",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.BROWN)
                     .strength(1f)
+                    .burnable()
                     .sounds(BlockSoundGroup.WOOD)));
 
     public static final Block ASH_LEAVES =registerBlock("ash_leaves",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.YELLOW)
                     .strength(0.2f)
+                    .burnable()
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
     public static final Block ASH_SAPLING =registerBlock( "ash_sapling",
             new Block(AbstractBlock.Settings.create()
                     //map color ?
                     .strength(0f)
                     .ticksRandomly()
+                    .nonOpaque()
+                    .requiresTool()
+                    .burnable()
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block HOLLY_WOOD =registerBlock("holly_wood",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.LIGHT_GRAY)
                     .strength(1f)
+                    .burnable()
                     .sounds(BlockSoundGroup.WOOD)));
 
     public static final Block HOLLY_LEAVES =registerBlock("holly_leaves",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.GREEN)
                     .strength(0.2f)
+                    .burnable()
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
 
     public static final Block HOLLY_SAPLING =registerBlock( "holly_sapling",
@@ -119,17 +130,21 @@ public class ModBlocks {
                     //map color ?
                     .strength(0f)
                     .ticksRandomly()
+                    .nonOpaque()
+                    .requiresTool()
+                    .burnable()
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
-    public static final Block YEW_WOOD =registerBlock("yew_wood.json",
+    public static final Block YEW_WOOD =registerBlock("yew_wood",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.LIGHT_GRAY)
                     .strength(1f)
+                    .burnable()
                     .sounds(BlockSoundGroup.WOOD)));
 
-    public static final Block YEW_LEAVES =registerBlock("yew_leaves.json",
+    public static final Block YEW_LEAVES =registerBlock("yew_leaves",
             new Block(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.GREEN)
+                    .mapColor(MapColor.GREEN).burnable()
                     .strength(0.2f)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
     public static final Block YEW_SAPLING =registerBlock( "yew_sapling",
@@ -137,6 +152,8 @@ public class ModBlocks {
                     //map color ?
                     .strength(0f)
                     .ticksRandomly()
+                    .nonOpaque()
+                    .requiresTool()
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
 
