@@ -114,6 +114,7 @@ public class ModBlocks {
                     .blockVision(Blocks::never)
                     .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
+
     public static final Block ASH_SAPLING =registerBlock( "ash_sapling",
             new Block(AbstractBlock.Settings.create()
                     //map color ?
