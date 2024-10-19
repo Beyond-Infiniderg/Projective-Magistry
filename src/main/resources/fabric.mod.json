@@ -15,6 +15,9 @@
 	"icon": "assets/projectivemagistry/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"derg.projectivemagistry.ProjectiveMagistryDataGen"
+		],
 		"main": [
 			"derg.projectivemagistry.ProjectiveMagistry"
 		],
