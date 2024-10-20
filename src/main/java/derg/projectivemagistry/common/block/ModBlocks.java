@@ -4,10 +4,7 @@ import derg.projectivemagistry.ProjectiveMagistry;
 import derg.projectivemagistry.common.block.Kiln.kiln_block;
 import derg.projectivemagistry.common.block.crystal.budding_crystal_block;
 import derg.projectivemagistry.common.block.crystal.crystal_block;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -115,15 +112,37 @@ public class ModBlocks {
                     .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
 
-    public static final Block ASH_SAPLING =registerBlock( "ash_sapling",
-            new Block(AbstractBlock.Settings.create()
-                    //map color ?
-                    .strength(0f)
-                    .ticksRandomly()
-                    .nonOpaque()
-                    .requiresTool()
-                    .burnable()
-                    .sounds(BlockSoundGroup.CHERRY_SAPLING)));
+    public static final SaplingBlock ASH_SAPLING = (SaplingBlock) registerBlock( "ash_sapling",
+        new SaplingBlock(
+                null,
+                AbstractBlock.Settings.create()
+                        .strength(0f)
+                        .ticksRandomly()
+                        .nonOpaque()
+                        .requiresTool()
+                        .burnable()
+                        .allowsSpawning(Blocks::canSpawnOnLeaves)
+                        .suffocates(Blocks::never)
+                        .blockVision(Blocks::never)
+                        .solidBlock(Blocks::never)
+                        .sounds(BlockSoundGroup.CHERRY_SAPLING)));
+
+
+//   testing ash sapling into proper shape
+//    public static final Block ASH_SAPLING =registerBlock( "ash_sapling",
+//            new Block(AbstractBlock.Settings.create()
+//                    //map color ?
+//                    .strength(0f)
+//                    .ticksRandomly()
+//                    .nonOpaque()
+//                    .requiresTool()
+//                    .burnable()
+
+//                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+//                    .suffocates(Blocks::never)
+//                    .blockVision(Blocks::never)
+//                    .solidBlock(Blocks::never)
+//                    .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block HOLLY_WOOD =registerBlock("holly_wood",
             new Block(AbstractBlock.Settings.create()
@@ -137,6 +156,10 @@ public class ModBlocks {
                     .mapColor(MapColor.GREEN)
                     .strength(0.2f)
                     .burnable()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
 
     public static final Block HOLLY_SAPLING =registerBlock( "holly_sapling",
@@ -147,6 +170,10 @@ public class ModBlocks {
                     .nonOpaque()
                     .requiresTool()
                     .burnable()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.CHERRY_SAPLING)));
 
     public static final Block YEW_WOOD =registerBlock("yew_wood",
@@ -160,6 +187,11 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.GREEN).burnable()
                     .strength(0.2f)
+                    .burnable()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.AZALEA_LEAVES)));
     public static final Block YEW_SAPLING =registerBlock( "yew_sapling",
             new Block(AbstractBlock.Settings.create()
@@ -188,4 +220,7 @@ public class ModBlocks {
     public static void registerModBlocks() {
         ProjectiveMagistry.LOGGER.info("Registering Mod Blocks For " + ProjectiveMagistry.MOD_ID);
     }
+
+    //datagen shit
+
 }
