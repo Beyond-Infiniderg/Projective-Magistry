@@ -62,149 +62,50 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)));
     //trees and leaves
+    public static final Block ASH_WOOD =registerBlock("ash_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).strength(3f)));
+    public static final Block ASH_LOG =registerBlock("ash_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(3f)));
+    public static final Block ASH_LEAVES =registerBlock("ash_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block ASH_SAPLING =registerBlock("ash_sapling",
+            new SaplingBlock(null, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block ASH_PLANKS = registerBlock("ash_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f)));
 
     public static final Block HAZEL_WOOD =registerBlock("hazel_wood",
-            new Block(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.BROWN)
-                    .strength(1f)
-                    .burnable()
-                    .sounds(BlockSoundGroup.WOOD)));
-
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).strength(3f)));
+    public static final Block HAZEL_LOG =registerBlock("hazel_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(3f)));
     public static final Block HAZEL_LEAVES =registerBlock("hazel_leaves",
-            new Block(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.GREEN)
-                    .strength(0.2f)
-                    .burnable()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
-                    .sounds(BlockSoundGroup.AZALEA_LEAVES)));
-
-    public static final Block HAZEL_SAPLING =registerBlock( "hazel_sapling",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(0f)
-                    .ticksRandomly()
-                    .nonOpaque()
-                    .requiresTool()
-                    .burnable()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
-                    .sounds(BlockSoundGroup.CHERRY_SAPLING)));
-
-    public static final Block ASH_WOOD =registerBlock("ash_wood",
-            new Block(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.BROWN)
-                    .strength(1f)
-                    .burnable()
-                    .sounds(BlockSoundGroup.WOOD)));
-
-    public static final Block ASH_LEAVES =registerBlock("ash_leaves",
-            new Block(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.YELLOW)
-                    .strength(0.2f)
-                    .burnable()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
-                    .sounds(BlockSoundGroup.AZALEA_LEAVES)));
-
-    public static final SaplingBlock ASH_SAPLING = (SaplingBlock) registerBlock( "ash_sapling",
-        new SaplingBlock(
-                null,
-                AbstractBlock.Settings.create()
-                        .strength(0f)
-                        .ticksRandomly()
-                        .nonOpaque()
-                        .requiresTool()
-                        .burnable()
-                        .allowsSpawning(Blocks::canSpawnOnLeaves)
-                        .suffocates(Blocks::never)
-                        .blockVision(Blocks::never)
-                        .solidBlock(Blocks::never)
-                        .sounds(BlockSoundGroup.CHERRY_SAPLING)));
-
-
-//   testing ash sapling into proper shape
-//    public static final Block ASH_SAPLING =registerBlock( "ash_sapling",
-//            new Block(AbstractBlock.Settings.create()
-//                    //map color ?
-//                    .strength(0f)
-//                    .ticksRandomly()
-//                    .nonOpaque()
-//                    .requiresTool()
-//                    .burnable()
-
-//                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-//                    .suffocates(Blocks::never)
-//                    .blockVision(Blocks::never)
-//                    .solidBlock(Blocks::never)
-//                    .sounds(BlockSoundGroup.CHERRY_SAPLING)));
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block HAZEL_SAPLING =registerBlock("hazel_sapling",
+            new SaplingBlock(null, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block HAZEL_PLANKS = registerBlock("hazel_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f)));
 
     public static final Block HOLLY_WOOD =registerBlock("holly_wood",
-            new Block(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.LIGHT_GRAY)
-                    .strength(1f)
-                    .burnable()
-                    .sounds(BlockSoundGroup.WOOD)));
-
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).strength(3f)));
+    public static final Block HOLLY_LOG =registerBlock("holly_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(3f)));
     public static final Block HOLLY_LEAVES =registerBlock("holly_leaves",
-            new Block(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.GREEN)
-                    .strength(0.2f)
-                    .burnable()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
-                    .sounds(BlockSoundGroup.AZALEA_LEAVES)));
-
-    public static final Block HOLLY_SAPLING =registerBlock( "holly_sapling",
-            new Block(AbstractBlock.Settings.create()
-                    //map color ?
-                    .strength(0f)
-                    .ticksRandomly()
-                    .nonOpaque()
-                    .requiresTool()
-                    .burnable()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
-                    .sounds(BlockSoundGroup.CHERRY_SAPLING)));
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block HOLLY_SAPLING =registerBlock("holly_sapling",
+            new SaplingBlock(null, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block HOLLY_PLANKS = registerBlock("holly_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f)));
 
     public static final Block YEW_WOOD =registerBlock("yew_wood",
-            new Block(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.LIGHT_GRAY)
-                    .strength(1f)
-                    .burnable()
-                    .sounds(BlockSoundGroup.WOOD)));
-
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).strength(3f)));
+    public static final Block YEW_LOG =registerBlock("yew_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(3f)));
     public static final Block YEW_LEAVES =registerBlock("yew_leaves",
-            new Block(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.GREEN).burnable()
-                    .strength(0.2f)
-                    .burnable()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
-                    .sounds(BlockSoundGroup.AZALEA_LEAVES)));
-    public static final Block YEW_SAPLING =registerBlock( "yew_sapling",
-            new Block(AbstractBlock.Settings.create()
-                    //map color ?
-                    .strength(0f)
-                    .ticksRandomly()
-                    .nonOpaque()
-                    .requiresTool()
-                    .allowsSpawning(Blocks::canSpawnOnLeaves)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
-                    .solidBlock(Blocks::never)
-                    .sounds(BlockSoundGroup.CHERRY_SAPLING)));
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block YEW_SAPLING =registerBlock("yew_sapling",
+            new SaplingBlock(null, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block YEW_PLANKS = registerBlock("yew_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f)));
+//
 
 
     private static Block registerBlock(String name, Block block){

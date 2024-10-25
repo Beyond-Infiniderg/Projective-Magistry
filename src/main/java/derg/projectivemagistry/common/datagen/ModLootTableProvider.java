@@ -29,9 +29,31 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-       //example of using datagen to have an block drop itself
+
+        addDrop(ModBlocks.ASH_LOG);
         addDrop(ModBlocks.ASH_WOOD);
-      //  addDrop(ModBlocks.ASH_LEAVES, leavesDrops(ModBlocks) );
+        addDrop(ModBlocks.ASH_LEAVES, leavesDrops(ModBlocks.ASH_LEAVES,ModBlocks.ASH_SAPLING, 0.0625f));
+        addDrop(ModBlocks.ASH_SAPLING);
+        addDrop(ModBlocks.ASH_PLANKS);
+
+        addDrop(ModBlocks.HOLLY_LOG);
+        addDrop(ModBlocks.HOLLY_WOOD);
+        addDrop(ModBlocks.HOLLY_LEAVES, leavesDrops(ModBlocks.HOLLY_LEAVES,ModBlocks.HOLLY_SAPLING, 0.0625f));
+        addDrop(ModBlocks.HOLLY_SAPLING);
+        addDrop(ModBlocks.HOLLY_PLANKS);
+
+        addDrop(ModBlocks.HAZEL_LOG);
+        addDrop(ModBlocks.HAZEL_WOOD);
+        addDrop(ModBlocks.HAZEL_LEAVES, leavesDrops(ModBlocks.HAZEL_LEAVES,ModBlocks.HAZEL_SAPLING, 0.0625f));
+        addDrop(ModBlocks.HAZEL_SAPLING);
+        addDrop(ModBlocks.HAZEL_PLANKS);
+
+        addDrop(ModBlocks.YEW_LOG);
+        addDrop(ModBlocks.YEW_WOOD);
+        addDrop(ModBlocks.YEW_LEAVES, leavesDrops(ModBlocks.YEW_LEAVES,ModBlocks.YEW_SAPLING, 0.0625f));
+        addDrop(ModBlocks.YEW_SAPLING);
+        addDrop(ModBlocks.YEW_PLANKS);
+
 
     }
 // for reference maybe for later idk
