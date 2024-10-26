@@ -25,17 +25,17 @@ public class ModConfiguredFeatures  {
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
     register(context, ASH_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
         BlockStateProvider.of(ModBlocks.ASH_LOG),
-        new StraightTrunkPlacer(5,6,3  ),
+        new StraightTrunkPlacer(2,3,3  ),
         BlockStateProvider.of(ModBlocks.ASH_LEAVES),
         new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),3),
-        new TwoLayersFeatureSize(1,8,2)).build());
+        new TwoLayersFeatureSize(3,8,5)).build());
 //decides how the tre as a whole looks like its hieght and shit
     register(context, HAZEL_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
             BlockStateProvider.of(ModBlocks.HAZEL_LOG),
-                new StraightTrunkPlacer(5,6,3  ),
+                new StraightTrunkPlacer(1,4,4  ),
                 BlockStateProvider.of(ModBlocks.HAZEL_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),3),
-                new TwoLayersFeatureSize(1,8,2)).build());
+                new TwoLayersFeatureSize(2,5,4)).build());
 
         register(context, HOLLY_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.HOLLY_LOG),
@@ -46,10 +46,10 @@ public class ModConfiguredFeatures  {
 
         register(context, YEW_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.YEW_LOG),
-                new StraightTrunkPlacer(5,6,3  ),
+                new StraightTrunkPlacer(5,8,3  ),
                 BlockStateProvider.of(ModBlocks.YEW_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),3),
-                new TwoLayersFeatureSize(1,8,2)).build());
+                new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),6),
+                new TwoLayersFeatureSize(1,6,2)).build());
 
 
 

@@ -16,8 +16,7 @@ import java.util.List;
 public class ModPlacedFeatures {
 
 
-//
-//
+
     public static final RegistryKey<PlacedFeature> ASH_PLACED_KEY = registerKey("ash_placed");
     public static final RegistryKey<PlacedFeature> HAZEL_PLACED_KEY = registerKey("hazel_placed");
 
@@ -29,19 +28,19 @@ public class ModPlacedFeatures {
 
         register(context,ASH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ASH_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(2,0.1f,2),ModBlocks.ASH_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(5,0.1f,2),ModBlocks.ASH_SAPLING));
 
         register(context,HAZEL_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.HAZEL_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(2,0.1f,2),ModBlocks.HAZEL_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(5,0.1f,2),ModBlocks.HAZEL_SAPLING));
 
         register(context,HOLLY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.HOLLY_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(2,0.1f,2),ModBlocks.HOLLY_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(5,0.1f,2),ModBlocks.HOLLY_SAPLING));
 
         register(context,YEW_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.YEW_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(2,0.1f,2),ModBlocks.YEW_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(5,0.1f,2),ModBlocks.YEW_SAPLING));
 
 
 

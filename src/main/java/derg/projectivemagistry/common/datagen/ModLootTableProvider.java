@@ -56,25 +56,5 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
 
     }
-// for reference maybe for later idk
-//    public LootTable.Builder leavesDrops(Block leaves, Block sapling, float... saplingChance) {
-//        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
-//        return this.dropsWithSilkTouchOrShears(
-//                        leaves,
-//                        ((LeafEntry.Builder)this.addSurvivesExplosionCondition(leaves, ItemEntry.builder(sapling)))
-//                                .conditionally(TableBonusLootCondition.builder(impl.getOrThrow(Enchantments.FORTUNE), saplingChance))
-//                )
-//                .pool(
-//                        LootPool.builder()
-//                                .rolls(ConstantLootNumberProvider.create(1.0F))
-//                                .conditionally(this.createWithoutShearsOrSilkTouchCondition())
-//                                .with(
-//                                        ((LeafEntry.Builder)this.applyExplosionDecay(
-//                                                leaves, ItemEntry.builder(Items.STICK).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 2.0F)))
-//                                        ))
-//                                                .conditionally(TableBonusLootCondition.builder(impl.getOrThrow(Enchantments.FORTUNE), LEAVES_STICK_DROP_CHANCE))
-//                                )
-//                );
-//        //
-//    }
+
 }
