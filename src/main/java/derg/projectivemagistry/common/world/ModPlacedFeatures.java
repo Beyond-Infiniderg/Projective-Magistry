@@ -16,8 +16,8 @@ import java.util.List;
 public class ModPlacedFeatures {
 
 
-
-
+//
+//
     public static final RegistryKey<PlacedFeature> ASH_PLACED_KEY = registerKey("ash_placed");
     public static final RegistryKey<PlacedFeature> HAZEL_PLACED_KEY = registerKey("hazel_placed");
 
