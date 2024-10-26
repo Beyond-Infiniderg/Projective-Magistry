@@ -30,36 +30,33 @@ public class ModItemGroups {
                         entries.add(ModItems.DOG_TONGUE);
                         entries.add(ModItems.SILVER_SWORD);
                         entries.add(ModItems.LEYLINE_CRYSTAL);
+
                         entries.add(ModBlocks.LEYLINE_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.SILVER_BLOCK);
                         entries.add(ModBlocks.RAW_SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
-                        entries.add(ModBlocks.KILN_BLOCK);
-
                         entries.add(ModBlocks.HAZEL_WOOD);
                         entries.add(ModBlocks.HAZEL_LEAVES);
                         entries.add(ModBlocks.HAZEL_SAPLING);
                         entries.add(ModBlocks.HAZEL_PLANKS);
                         entries.add(ModBlocks.HAZEL_LOG);
-
                         entries.add(ModBlocks.ASH_WOOD);
                         entries.add(ModBlocks.ASH_LEAVES);
                         entries.add(ModBlocks.ASH_SAPLING);
                         entries.add(ModBlocks.ASH_PLANKS);
                         entries.add(ModBlocks.ASH_LOG);
-
                         entries.add(ModBlocks.HOLLY_WOOD);
                         entries.add(ModBlocks.HOLLY_LEAVES);
                         entries.add(ModBlocks.HOLLY_SAPLING);
                         entries.add(ModBlocks.HOLLY_PLANKS);
                         entries.add(ModBlocks.HOLLY_LOG);
-
                         entries.add(ModBlocks.YEW_WOOD);
                         entries.add(ModBlocks.YEW_LEAVES);
                         entries.add(ModBlocks.YEW_SAPLING);
                         entries.add(ModBlocks.YEW_PLANKS);
                         entries.add(ModBlocks.YEW_LOG);
+                        entries.add(ModBlocks.ANCIENT_PEDESTAL);
 
 
                     }).build());
