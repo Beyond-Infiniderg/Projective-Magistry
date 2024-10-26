@@ -9,12 +9,14 @@ public class ModTreeGeneration {
 
     public static void generateTrees(){
 
-//        //crashes game when tries to play world "Biomekeys"
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SWAMP),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ASH_PLACED_KEY);
+
+
+//the spawned in savanna
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SAVANNA),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.HAZEL_PLACED_KEY);
-
+//theyspawn in savanna
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.TAIGA),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.HOLLY_PLACED_KEY);
 
