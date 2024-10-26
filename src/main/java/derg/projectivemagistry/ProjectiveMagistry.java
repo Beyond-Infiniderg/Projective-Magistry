@@ -1,5 +1,6 @@
 package derg.projectivemagistry;
 
+import derg.projectivemagistry.common.block.entity.ModBlockEntities;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import derg.projectivemagistry.common.block.ModBlocks;
 import derg.projectivemagistry.common.registry.ModItemGroups;
@@ -23,10 +24,10 @@ public class ProjectiveMagistry implements ModInitializer {
 		ModItems.initialize();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		LOGGER.info("Loading Projective Magistry!");
+		ModBlockEntities.registerBlockEntities();
 		ModWorldGeneration.generateModWorldGeneration();
 		registerFlammables();
-
+		LOGGER.info("Loading Projective Magistry!");
 	}
 	public static Identifier id(String path) {
 		return Identifier.of(MOD_ID, path);

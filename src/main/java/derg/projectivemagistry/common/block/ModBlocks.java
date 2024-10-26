@@ -1,9 +1,9 @@
 package derg.projectivemagistry.common.block;
 
 import derg.projectivemagistry.ProjectiveMagistry;
-import derg.projectivemagistry.common.block.Kiln.kiln_block;
 import derg.projectivemagistry.common.block.crystal.budding_crystal_block;
 import derg.projectivemagistry.common.block.crystal.crystal_block;
+import derg.projectivemagistry.common.block.entity.Pedestal.AncientPedestalBlock;
 import derg.projectivemagistry.common.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -29,12 +29,13 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
-    public static final Block KILN_BLOCK =registerBlock("kiln_block",
-            new kiln_block(AbstractBlock.Settings.create()
+    public static final Block ANCIENT_PEDESTAL =registerBlock("ancient_pedestal",
+            new AncientPedestalBlock(AbstractBlock.Settings.create()
                     .strength(1f)
-                    .ticksRandomly()
                     .requiresTool()
+                    .nonOpaque()
                     .sounds(BlockSoundGroup.STONE)));
+
     public static final Block SILVER_BLOCK =registerBlock("silver_block",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.LIGHT_BLUE_GRAY)
