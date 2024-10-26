@@ -4,6 +4,7 @@ import derg.projectivemagistry.ProjectiveMagistry;
 import derg.projectivemagistry.common.block.Kiln.kiln_block;
 import derg.projectivemagistry.common.block.crystal.budding_crystal_block;
 import derg.projectivemagistry.common.block.crystal.crystal_block;
+import derg.projectivemagistry.common.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -69,7 +70,7 @@ public class ModBlocks {
     public static final Block ASH_LEAVES =registerBlock("ash_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block ASH_SAPLING =registerBlock("ash_sapling",
-            new SaplingBlock(null, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.ASH, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     public static final Block ASH_PLANKS = registerBlock("ash_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f)));
 
@@ -80,7 +81,7 @@ public class ModBlocks {
     public static final Block HAZEL_LEAVES =registerBlock("hazel_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block HAZEL_SAPLING =registerBlock("hazel_sapling",
-            new SaplingBlock(null, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.HAZEL, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     public static final Block HAZEL_PLANKS = registerBlock("hazel_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f)));
 
@@ -91,7 +92,7 @@ public class ModBlocks {
     public static final Block HOLLY_LEAVES =registerBlock("holly_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block HOLLY_SAPLING =registerBlock("holly_sapling",
-            new SaplingBlock(null, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.HOLLY, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     public static final Block HOLLY_PLANKS = registerBlock("holly_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f)));
 
@@ -102,7 +103,7 @@ public class ModBlocks {
     public static final Block YEW_LEAVES =registerBlock("yew_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block YEW_SAPLING =registerBlock("yew_sapling",
-            new SaplingBlock(null, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.YEW, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     public static final Block YEW_PLANKS = registerBlock("yew_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f)));
 //

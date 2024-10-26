@@ -1,8 +1,12 @@
 package derg.projectivemagistry;
 
 import derg.projectivemagistry.common.datagen.*;
+import derg.projectivemagistry.common.world.ModConfiguredFeatures;
+import derg.projectivemagistry.common.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class ProjectiveMagistryDataGen implements DataGeneratorEntrypoint{
     @Override
@@ -17,5 +21,15 @@ public class ProjectiveMagistryDataGen implements DataGeneratorEntrypoint{
         pack.addProvider(ModLootTableProvider::new);
         pack.addProvider(ModModelProvider::new);
         pack.addProvider(ModRecipeProvider::new);
+        pack.addProvider(ModWorldGenerator::new);
     }
+
+    @Override
+    public void buildRegistry(RegistryBuilder registryBuilder) {
+        registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+
+    }
+
+
 }

@@ -3,6 +3,7 @@ package derg.projectivemagistry;
 import derg.projectivemagistry.common.block.ModBlocks;
 import derg.projectivemagistry.common.registry.ModItemGroups;
 import derg.projectivemagistry.common.item.ModItems;
+import derg.projectivemagistry.common.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -22,6 +23,7 @@ public class ProjectiveMagistry implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		LOGGER.info("Loading Projective Magistry!");
+		ModWorldGeneration.generateModWorldGeneration();
 
 	}
 	public static Identifier id(String path) {
