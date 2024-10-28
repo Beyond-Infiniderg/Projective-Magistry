@@ -13,7 +13,11 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(ProjectiveMagistry.MOD_ID, "ancient_pedestal_be"),
                     BlockEntityType.Builder.create(AncientPedestalBlockEntity::new, ModBlocks.ANCIENT_PEDESTAL).build(null));
 
+    public static final BlockEntityType<AncientPedestalBlockEntity> KILN_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(ProjectiveMagistry.MOD_ID, "ancient_pedestal_be"),
+                    BlockEntityType.Builder.create(AncientPedestalBlockEntity::new, ModBlocks.ANCIENT_PEDESTAL).build(null));
+
     public static void registerBlockEntities(){
-        ProjectiveMagistry.LOGGER.info("Registering block entities for" + ProjectiveMagistry.MOD_ID);
+        ProjectiveMagistry.LOGGER.info("Registering block entities for " + ProjectiveMagistry.MOD_ID);
     }
 }
