@@ -36,6 +36,13 @@ public class ModBlocks {
                     .nonOpaque()
                     .sounds(BlockSoundGroup.STONE)));
 
+    public static final Block KILN_BLOCK =registerBlock("kiln_block",
+            new AncientPedestalBlock(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()
+                    .ticksRandomly()
+                    .sounds(BlockSoundGroup.STONE)));
+
     public static final Block SILVER_BLOCK =registerBlock("silver_block",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.LIGHT_BLUE_GRAY)
