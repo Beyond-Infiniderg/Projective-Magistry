@@ -23,6 +23,16 @@ public class ModTreeGeneration {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BIRCH_FOREST,BiomeKeys.DARK_FOREST,BiomeKeys.JUNGLE,BiomeKeys.FLOWER_FOREST,BiomeKeys.WOODED_BADLANDS,BiomeKeys.WINDSWEPT_FOREST,BiomeKeys.FOREST,BiomeKeys.OLD_GROWTH_BIRCH_FOREST,BiomeKeys.SPARSE_JUNGLE,BiomeKeys.BAMBOO_JUNGLE,BiomeKeys.CHERRY_GROVE),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.YEW_PLACED_KEY);
 
+        //testing if they spawn
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ASH_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.HAZEL_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.HOLLY_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.YEW_PLACED_KEY);
+
 
     }
 
