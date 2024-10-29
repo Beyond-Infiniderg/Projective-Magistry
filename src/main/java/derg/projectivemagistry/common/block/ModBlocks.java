@@ -115,8 +115,83 @@ public class ModBlocks {
     public static final Block YEW_PLANKS = registerBlock("yew_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f)));
 //
+    public static final Block ASH_STAIRS =registerBlock("ash_stairs",
+        new StairsBlock(ModBlocks.ASH_PLANKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f)));
 
-
+//    public static final Block ASH_SLAB =registerBlock("ash_slab"
+//    , new SlabBlock(AbstractBloc
+//
+//    public static final Block ASH_FENCE =registerBlock("ash_fence")
+//
+//    public static final Block ASH_FENCE_GATE =registerBlock("ash_fence_gate")
+//
+//    public static final Block ASH_WALL =registerBlock("ash_wall")
+//
+//    public static final Block ASH_BUTTON =registerBlock("ash_button")
+//
+//    public static final Block ASH_PRESSURE_PLATE =registerBlock("ash_pressure_plate")
+//
+//    public static final Block ASH_TRAPDOOR =registerBlock("ash_trapdoor")
+//
+//    public static final Block ASH_DOOR =registerBlock("ash_door")
+//
+//
+//
+//    public static final Block HAZEL_STAIRS =registerBlock("hazel_stairs")
+//
+//    public static final Block HAZEL_SLAB =registerBlock("hazel_slab")
+//
+//    public static final Block HAZEL_FENCE =registerBlock("hazel_fence")
+//
+//    public static final Block HAZEL_FENCE_GATE =registerBlock("hazel_fence_gate")
+//
+//    public static final Block HAZEL_WALL =registerBlock("hazel_wall")
+//
+//    public static final Block HAZEL_BUTTON =registerBlock("hazel_button")
+//
+//    public static final Block HAZEL_PRESSURE_PLATE =registerBlock("hazel_pressure_plate")
+//
+//    public static final Block HAZEL_TRAPDOOR =registerBlock("hazel_trapdoor")
+//
+//    public static final Block HAZEL_DOOR =registerBlock("hazel_door")
+//
+//
+//    public static final Block HOLLY_STAIRS =registerBlock("holly_stairs")
+//
+//    public static final Block HOLLY_SLAB =registerBlock("holly_slab")
+//
+//    public static final Block HOLLY_FENCE =registerBlock("holly_fence")
+//
+//    public static final Block HOLLY_FENCE_GATE =registerBlock("holly_fence_gate")
+//
+//    public static final Block HOLLY_WALL =registerBlock("holly_wall")
+//
+//    public static final Block HOLLY_BUTTON =registerBlock("holly_button")
+//
+//    public static final Block HOLLY_PRESSURE_PLATE =registerBlock("holly_pressure_plate")
+//
+//    public static final Block HOLLY_TRAPDOOR =registerBlock("holly_trapdoor")
+//
+//    public static final Block HOLLY_DOOR =registerBlock("holly_door")
+//
+//
+//    public static final Block YEW_STAIRS =registerBlock("yew_stairs")
+//
+//    public static final Block YEW_SLAB =registerBlock("yew_slab")
+//
+//    public static final Block YEW_FENCE =registerBlock("yew_fence")
+//
+//    public static final Block YEW_FENCE_GATE =registerBlock("yew_fence_gate")
+//
+//    public static final Block YEW_WALL =registerBlock("yew_wall")
+//
+//    public static final Block YEW_BUTTON =registerBlock("yew_button")
+//
+//    public static final Block YEW_PRESSURE_PLATE =registerBlock("yew_pressure_plate")
+//
+//    public static final Block YEW_TRAPDOOR =registerBlock("yew_trapdoor")
+//
+//    public static final Block YEW_DOOR =registerBlock("hazel_door")
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(ProjectiveMagistry.MOD_ID, name), block);
