@@ -56,6 +56,45 @@ public class ModItemGroups {
                         entries.add(ModBlocks.YEW_SAPLING);
                         entries.add(ModBlocks.YEW_PLANKS);
                         entries.add(ModBlocks.YEW_LOG);
+
+                        entries.add(ModBlocks.ASH_SLAB);
+                        entries.add(ModBlocks.ASH_STAIRS);
+                        entries.add(ModBlocks.ASH_FENCE);
+                        entries.add(ModBlocks.ASH_FENCE_GATE);
+                        entries.add(ModBlocks.ASH_BUTTON);
+                        entries.add(ModBlocks.ASH_WALL);
+                        entries.add(ModBlocks.ASH_PRESSURE_PLATE);
+                        entries.add(ModBlocks.ASH_DOOR);
+                        entries.add(ModBlocks.ASH_TRAPDOOR);
+                        entries.add(ModBlocks.HAZEL_SLAB);
+                        entries.add(ModBlocks.HAZEL_STAIRS);
+                        entries.add(ModBlocks.HAZEL_FENCE);
+                        entries.add(ModBlocks.HAZEL_FENCE_GATE);
+                        entries.add(ModBlocks.HAZEL_WALL);
+                        entries.add(ModBlocks.HAZEL_BUTTON);
+                        entries.add(ModBlocks.HAZEL_PRESSURE_PLATE);
+                        entries.add(ModBlocks.HAZEL_DOOR);
+                        entries.add(ModBlocks.HAZEL_TRAPDOOR);
+
+                        entries.add(ModBlocks.HOLLY_SLAB);
+                        entries.add(ModBlocks.HOLLY_STAIRS);
+                        entries.add(ModBlocks.HOLLY_FENCE);
+                        entries.add(ModBlocks.HOLLY_FENCE_GATE);
+                        entries.add(ModBlocks.HOLLY_WALL);
+                        entries.add(ModBlocks.HOLLY_BUTTON);
+                        entries.add(ModBlocks.HOLLY_PRESSURE_PLATE);
+                        entries.add(ModBlocks.HOLLY_DOOR);
+                        entries.add(ModBlocks.HOLLY_TRAPDOOR);
+
+                        entries.add(ModBlocks.YEW_SLAB);
+                        entries.add(ModBlocks.YEW_STAIRS);
+                        entries.add(ModBlocks.YEW_FENCE);
+                        entries.add(ModBlocks.YEW_FENCE_GATE);
+                        entries.add(ModBlocks.YEW_WALL);
+                        entries.add(ModBlocks.YEW_BUTTON);
+                        entries.add(ModBlocks.YEW_PRESSURE_PLATE);
+                        entries.add(ModBlocks.YEW_DOOR);
+                        entries.add(ModBlocks.YEW_TRAPDOOR);
                         entries.add(ModBlocks.ANCIENT_PEDESTAL);
 
 

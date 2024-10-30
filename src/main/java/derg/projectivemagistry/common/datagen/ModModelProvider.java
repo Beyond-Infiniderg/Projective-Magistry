@@ -19,24 +19,69 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerLog(ModBlocks.ASH_LOG).log(ModBlocks.ASH_LOG).wood(ModBlocks.ASH_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ASH_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool ashTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ASH_PLANKS);
         blockStateModelGenerator.registerSingleton(ModBlocks.ASH_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.ASH_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+
         blockStateModelGenerator.registerLog(ModBlocks.HAZEL_LOG).log(ModBlocks.HAZEL_LOG).wood(ModBlocks.HAZEL_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HAZEL_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool hazelTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HAZEL_PLANKS);
+
         blockStateModelGenerator.registerSingleton(ModBlocks.HAZEL_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.HAZEL_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerLog(ModBlocks.HOLLY_LOG).log(ModBlocks.HOLLY_LOG).wood(ModBlocks.HOLLY_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HOLLY_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool hollyTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HOLLY_PLANKS);
         blockStateModelGenerator.registerSingleton(ModBlocks.HOLLY_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.HOLLY_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerLog(ModBlocks.YEW_LOG).log(ModBlocks.YEW_LOG).wood(ModBlocks.YEW_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YEW_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool yewTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.YEW_PLANKS);
         blockStateModelGenerator.registerSingleton(ModBlocks.YEW_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.YEW_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerDoor(ModBlocks.ASH_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.ASH_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.HAZEL_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.HAZEL_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.HOLLY_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.HOLLY_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.YEW_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.YEW_TRAPDOOR);
+
+
+        ashTexturePool.stairs(ModBlocks.ASH_STAIRS);
+        ashTexturePool.slab(ModBlocks.ASH_SLAB);
+        ashTexturePool.fence(ModBlocks.ASH_FENCE);
+        ashTexturePool.fenceGate(ModBlocks.ASH_FENCE_GATE);
+        ashTexturePool.wall(ModBlocks.ASH_WALL);
+        ashTexturePool.button(ModBlocks.ASH_BUTTON);
+        ashTexturePool.pressurePlate(ModBlocks.ASH_PRESSURE_PLATE);
+
+
+
+        hazelTexturePool.stairs(ModBlocks.HAZEL_STAIRS);
+        hazelTexturePool.slab(ModBlocks.HAZEL_SLAB);
+        hazelTexturePool.fence(ModBlocks.HAZEL_FENCE);
+        hazelTexturePool.fenceGate(ModBlocks.HAZEL_FENCE_GATE);
+        hazelTexturePool.wall(ModBlocks.HAZEL_WALL);
+        hazelTexturePool.button(ModBlocks.HAZEL_BUTTON);
+        hazelTexturePool.pressurePlate(ModBlocks.HAZEL_PRESSURE_PLATE);
+
+        hollyTexturePool.stairs(ModBlocks.HOLLY_STAIRS);
+        hollyTexturePool.slab(ModBlocks.HOLLY_SLAB);
+        hollyTexturePool.fence(ModBlocks.HOLLY_FENCE);
+        hollyTexturePool.fenceGate(ModBlocks.HOLLY_FENCE_GATE);
+        hollyTexturePool.button(ModBlocks.HOLLY_BUTTON);
+        hollyTexturePool.pressurePlate(ModBlocks.HOLLY_PRESSURE_PLATE);
+
+
+        yewTexturePool.stairs(ModBlocks.YEW_STAIRS);
+        yewTexturePool.slab(ModBlocks.YEW_SLAB);
+        yewTexturePool.fence(ModBlocks.YEW_FENCE);
+        yewTexturePool.fenceGate(ModBlocks.YEW_FENCE_GATE);
+        yewTexturePool.button(ModBlocks.YEW_BUTTON);
+        yewTexturePool.pressurePlate(ModBlocks.YEW_PRESSURE_PLATE);
+
 
 
 

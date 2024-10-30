@@ -19,5 +19,17 @@ public class ProjectiveMagistryClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HOLLY_SAPLING, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YEW_SAPLING, RenderLayer.getCutout());
 		BlockEntityRendererFactories.register(ModBlockEntities.ANCIENT_PEDESTAL_BE, AncientPedestalBlockEntityRenderer::new);
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ASH_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ASH_TRAPDOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HAZEL_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HAZEL_TRAPDOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HOLLY_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HOLLY_TRAPDOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YEW_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YEW_TRAPDOOR, RenderLayer.getCutout());
+
 	}
 }

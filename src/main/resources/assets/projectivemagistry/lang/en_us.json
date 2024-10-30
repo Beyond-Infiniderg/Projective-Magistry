@@ -45,5 +45,48 @@
   "block.projectivemagistry.yew_planks": "Yew Plank",
   "block.projectivemagistry.yew_log": "Yew Log",
 
+  "block.projectivemagistry.ash_stairs": "Ash Stairs",
+  "block.projectivemagistry.ash_slab": "Ash Slab",
+  "block.projectivemagistry.ash_fence": "Ash Fence",
+  "block.projectivemagistry.ash_fence_gate": "Ash Fence Gate",
+  "block.projectivemagistry.ash_wall": "ASH Wall",
+  "block.projectivemagistry.ash_button": "Ash Button",
+  "block.projectivemagistry.ash_pressure_plate": "Ash Pressure Plate",
+  "block.projectivemagistry.ash_door": "Ash Door",
+  "block.projectivemagistry.ash_trapdoor": "Ash Trapdoor",
+
+  "block.projectivemagistry.hazel_stairs": "Hazel Stairs",
+  "block.projectivemagistry.hazel_slab": "Hazel Slab",
+  "block.projectivemagistry.hazel_fence": "Hazel Fence",
+  "block.projectivemagistry.hazel_fence_gate": "Hazel Fence Gate",
+  "block.projectivemagistry.hazel_wall": "Hazel Wall",
+  "block.projectivemagistry.hazel_button": "Hazel Button",
+  "block.projectivemagistry.hazel_pressure_plate": "Hazel Pressure Plate",
+  "block.projectivemagistry.hazel_door": "Hazel Door",
+  "block.projectivemagistry.hazel_trapdoor": "Hazel Trapdoor",
+
+  "block.projectivemagistry.holly_stairs": "Holly Stairs",
+  "block.projectivemagistry.holly_slab": "Holly Slab",
+  "block.projectivemagistry.holly_fence": "Holly Fence",
+  "block.projectivemagistry.holly_fence_gate": "Holly Fence Gate",
+  "block.projectivemagistry.holly_wall": "Holly Wall",
+
+  "block.projectivemagistry.holly_button": "Holly Button",
+  "block.projectivemagistry.holly_pressure_plate": "Holly Pressure Plate",
+  "block.projectivemagistry.holly_door": "Holly Door",
+  "block.projectivemagistry.holly_trapdoor": "Holly Trapdoor",
+
+  "block.projectivemagistry.yew_stairs": "Yew Stairs",
+  "block.projectivemagistry.yew_slab": "Yew Slab",
+  "block.projectivemagistry.yew_fence": "Yew Fence",
+  "block.projectivemagistry.yew_fence_gate": "Yew Fence Gate",
+  "block.projectivemagistry.yew_wall": "Yew Wall",
+
+  "block.projectivemagistry.yew_button": "Yew Button",
+  "block.projectivemagistry.yew_pressure_plate": "Yew Pressure Plate",
+  "block.projectivemagistry.yew_door": "Yew Door",
+  "block.projectivemagistry.yew_trapdoor": "Yew Trapdoor",
+
+
   "itemgroup.projectivemagistry.projective_magistry_items": "Projective Magistry"
 }
