@@ -54,6 +54,46 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.YEW_SAPLING);
         addDrop(ModBlocks.YEW_PLANKS);
 
+        addDrop(ModBlocks.ASH_SLAB);
+        addDrop(ModBlocks.ASH_STAIRS);
+        addDrop(ModBlocks.ASH_FENCE);
+        addDrop(ModBlocks.ASH_FENCE_GATE);
+        addDrop(ModBlocks.ASH_BUTTON);
+        addDrop(ModBlocks.ASH_PRESSURE_PLATE);
+        addDrop(ModBlocks.ASH_DOOR);
+        addDrop(ModBlocks.ASH_TRAPDOOR);
+        addDrop(ModBlocks.ASH_WALL);
+
+        addDrop(ModBlocks.HAZEL_SLAB);
+        addDrop(ModBlocks.HAZEL_STAIRS);
+        addDrop(ModBlocks.HAZEL_FENCE);
+        addDrop(ModBlocks.HAZEL_FENCE_GATE);
+        addDrop(ModBlocks.HAZEL_BUTTON);
+        addDrop(ModBlocks.HAZEL_PRESSURE_PLATE);
+        addDrop(ModBlocks.HAZEL_DOOR);
+        addDrop(ModBlocks.HAZEL_TRAPDOOR);
+        addDrop(ModBlocks.HAZEL_WALL);
+
+        addDrop(ModBlocks.HOLLY_SLAB);
+        addDrop(ModBlocks.HOLLY_STAIRS);
+        addDrop(ModBlocks.HOLLY_FENCE);
+        addDrop(ModBlocks.HOLLY_FENCE_GATE);
+        addDrop(ModBlocks.HOLLY_BUTTON);
+        addDrop(ModBlocks.HOLLY_PRESSURE_PLATE);
+        addDrop(ModBlocks.HOLLY_DOOR);
+        addDrop(ModBlocks.HOLLY_TRAPDOOR);
+        addDrop(ModBlocks.HOLLY_WALL);
+
+        addDrop(ModBlocks.YEW_SLAB);
+        addDrop(ModBlocks.YEW_STAIRS);
+        addDrop(ModBlocks.YEW_FENCE);
+        addDrop(ModBlocks.YEW_FENCE_GATE);
+        addDrop(ModBlocks.YEW_BUTTON);
+        addDrop(ModBlocks.YEW_PRESSURE_PLATE);
+        addDrop(ModBlocks.YEW_DOOR);
+        addDrop(ModBlocks.YEW_TRAPDOOR);
+        addDrop(ModBlocks.YEW_WALL);
+
 
     }
 

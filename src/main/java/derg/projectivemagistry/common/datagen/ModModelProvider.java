@@ -71,6 +71,8 @@ public class ModModelProvider extends FabricModelProvider {
         hollyTexturePool.slab(ModBlocks.HOLLY_SLAB);
         hollyTexturePool.fence(ModBlocks.HOLLY_FENCE);
         hollyTexturePool.fenceGate(ModBlocks.HOLLY_FENCE_GATE);
+        hollyTexturePool.wall(ModBlocks.HOLLY_WALL);
+
         hollyTexturePool.button(ModBlocks.HOLLY_BUTTON);
         hollyTexturePool.pressurePlate(ModBlocks.HOLLY_PRESSURE_PLATE);
 
@@ -79,6 +81,8 @@ public class ModModelProvider extends FabricModelProvider {
         yewTexturePool.slab(ModBlocks.YEW_SLAB);
         yewTexturePool.fence(ModBlocks.YEW_FENCE);
         yewTexturePool.fenceGate(ModBlocks.YEW_FENCE_GATE);
+        yewTexturePool.wall(ModBlocks.YEW_WALL);
+
         yewTexturePool.button(ModBlocks.YEW_BUTTON);
         yewTexturePool.pressurePlate(ModBlocks.YEW_PRESSURE_PLATE);
 
