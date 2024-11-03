@@ -37,6 +37,7 @@ public class ModConfiguredFeatures  {
         BlockStateProvider.of(ModBlocks.ASH_LEAVES),
         new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),3),
         new TwoLayersFeatureSize(1,0,2)).build());
+
 //decides how the tre as a whole looks like its hieght and shit
         register(context, HAZEL_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
             BlockStateProvider.of(ModBlocks.HAZEL_LOG),

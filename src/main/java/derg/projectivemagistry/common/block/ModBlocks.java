@@ -257,6 +257,6 @@ public class ModBlocks {
         ProjectiveMagistry.LOGGER.info("Registering Mod Blocks For " + ProjectiveMagistry.MOD_ID);
     }
 
-    //datagen shit
+
 
 }
