@@ -65,7 +65,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("bbb")
                 .input('b', ModBlocks.ASH_PLANKS)
                 .criterion(hasItem(ModBlocks.ASH_PLANKS), conditionsFromItem(ModBlocks.ASH_PLANKS))
-                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "ash_stairs"));
+                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "ash_slabs"));
 
 
 
@@ -84,7 +84,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("bbb")
                 .input('b', ModBlocks.HOLLY_PLANKS)
                 .criterion(hasItem(ModBlocks.HOLLY_PLANKS), conditionsFromItem(ModBlocks.HOLLY_PLANKS))
-                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "holly_stairs"));
+                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "holly_slabs"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YEW_SLAB,6)
 
@@ -93,7 +93,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("bbb")
                 .input('b', ModBlocks.YEW_PLANKS)
                 .criterion(hasItem(ModBlocks.YEW_PLANKS), conditionsFromItem(ModBlocks.YEW_PLANKS))
-                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "yew_stairs"));
+                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "yew_slabs"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASH_DOOR,3)
 
