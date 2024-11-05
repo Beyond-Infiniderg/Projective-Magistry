@@ -76,7 +76,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("bbb")
                 .input('b', ModBlocks.HAZEL_PLANKS)
                 .criterion(hasItem(ModBlocks.HAZEL_PLANKS), conditionsFromItem(ModBlocks.HAZEL_PLANKS))
-                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "hazel_stairs"));
+                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "hazel_slab"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HOLLY_SLAB,6)
 
                 .pattern("   ")
