@@ -45,7 +45,7 @@ public class ModPlacedFeatures {
                         PlacedFeatures.createCountExtraModifier(2,0.1f,2),ModBlocks.YEW_SAPLING));
 
         register(context, SILVER_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SILVER_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(14, // Veins per Chunk
+                ModOrePlacement.modifiersWithCount(2, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
                         // trapeziod instead of uniform for shape of distrubation
 

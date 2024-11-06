@@ -63,12 +63,12 @@ public class ModConfiguredFeatures  {
         RuleTest stoneReplaceables= new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables= new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
-//
+
         List<OreFeatureConfig.Target> overworldSilverOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.SILVER_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_SILVER_ORE.getDefaultState()));
 
-        register(context, SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSilverOres, 53) );
+        register(context, SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSilverOres, 9) );
     }
 
 
