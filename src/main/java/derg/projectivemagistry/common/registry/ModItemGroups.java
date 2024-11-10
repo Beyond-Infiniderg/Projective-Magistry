@@ -30,10 +30,13 @@ public class ModItemGroups {
                         entries.add(ModItems.DOG_TONGUE);
                         entries.add(ModItems.SILVER_SWORD);
                         entries.add(ModItems.LEYLINE_CRYSTAL);
+                        entries.add(ModItems.SILVER_INGOT);
+                        entries.add(ModItems.SILVER_NUGGET);
+                        entries.add(ModItems.RAW_SILVER);
 
                         entries.add(ModBlocks.LEYLINE_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.SILVER_BLOCK);
-                        entries.add(ModBlocks.RAW_SILVER_BLOCK);
+
                         entries.add(ModBlocks.SILVER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
                         entries.add(ModBlocks.HAZEL_WOOD);
@@ -99,6 +102,7 @@ public class ModItemGroups {
 
 
                     }).build());
+
 
     public static void registerItemGroups(){
         ProjectiveMagistry.LOGGER.info("Registering Item Groups For" + ProjectiveMagistry.MOD_ID);

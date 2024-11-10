@@ -5,13 +5,17 @@ import derg.projectivemagistry.common.block.crystal.budding_crystal_block;
 import derg.projectivemagistry.common.block.crystal.crystal_block;
 import derg.projectivemagistry.common.block.entity.Pedestal.AncientPedestalBlock;
 import derg.projectivemagistry.common.world.tree.ModSaplingGenerators;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+
+import static derg.projectivemagistry.common.item.ModItems.SILVER_NUGGET;
 
 public class ModBlocks {
     public static final Block LEYLINE_CRYSTAL_BLOCK =registerBlock("leyline_crystal_block",
@@ -258,5 +262,95 @@ public class ModBlocks {
     }
 
 
+    public static void initialize() {
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(ASH_LOG);
+            entries.add(HOLLY_LOG);
+            entries.add(HAZEL_LOG);
+            entries.add(YEW_LOG);
+            entries.add(ASH_WOOD);
+            entries.add(HAZEL_WOOD);
+            entries.add(HOLLY_WOOD);
+            entries.add(YEW_WOOD);
+            entries.add(ASH_PLANKS);
+            entries.add(HAZEL_PLANKS);
+            entries.add(HOLLY_PLANKS);
+            entries.add(YEW_PLANKS);
+            entries.add(ASH_STAIRS);
+            entries.add(HAZEL_STAIRS);
+            entries.add(HOLLY_STAIRS);
+            entries.add(YEW_STAIRS);
+            entries.add(ASH_SLAB);
+            entries.add(HAZEL_SLAB);
+            entries.add(HOLLY_SLAB);
+            entries.add(YEW_SLAB);
+            entries.add(ASH_FENCE);
+            entries.add(HAZEL_FENCE);
+            entries.add(HOLLY_FENCE);
+            entries.add(YEW_FENCE);
+            entries.add(ASH_FENCE_GATE);
+            entries.add(HAZEL_FENCE_GATE);
+            entries.add(HOLLY_FENCE_GATE);
+            entries.add(YEW_FENCE_GATE);
+            entries.add(ASH_DOOR);
+            entries.add(HAZEL_DOOR);
+            entries.add(HOLLY_DOOR);
+            entries.add(YEW_DOOR);
+            entries.add(ASH_TRAPDOOR);
+            entries.add(HAZEL_TRAPDOOR);
+            entries.add(HOLLY_TRAPDOOR);
+            entries.add(YEW_TRAPDOOR);
+            entries.add(ASH_BUTTON);
+            entries.add(HAZEL_BUTTON);
+            entries.add(HOLLY_BUTTON);
+            entries.add(YEW_BUTTON);
+            entries.add(ASH_PRESSURE_PLATE);
+            entries.add(HAZEL_PRESSURE_PLATE);
+            entries.add(HOLLY_PRESSURE_PLATE);
+            entries.add(YEW_PRESSURE_PLATE);
+            entries.add(ASH_WALL);
+            entries.add(HAZEL_WALL);
+            entries.add(HOLLY_WALL);
+            entries.add(YEW_WALL);
+
+
+
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(ASH_LOG);
+            entries.add(HAZEL_LOG);
+            entries.add(HOLLY_LOG);
+            entries.add(YEW_LOG);
+
+            entries.add(ASH_SAPLING);
+            entries.add(HAZEL_SAPLING);
+            entries.add(HOLLY_SAPLING);
+            entries.add(YEW_SAPLING);
+
+            entries.add(ASH_LEAVES);
+            entries.add(HAZEL_LEAVES);
+            entries.add(HOLLY_LEAVES);
+            entries.add(YEW_LEAVES);
+            entries.add(SILVER_ORE);
+            entries.add(DEEPSLATE_SILVER_ORE);
+
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
+            entries.add(KILN_BLOCK);
+            entries.add(ANCIENT_PEDESTAL);
+        });
+
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> {
+        entries.add(ASH_BUTTON);
+        entries.add(HAZEL_BUTTON);
+        entries.add(HOLLY_BUTTON);
+        entries.add(YEW_BUTTON);
+        entries.add(ASH_PRESSURE_PLATE);
+        entries.add(HAZEL_PRESSURE_PLATE);
+        entries.add(HOLLY_PRESSURE_PLATE);
+        entries.add(YEW_PRESSURE_PLATE);
+        });
+}
 }

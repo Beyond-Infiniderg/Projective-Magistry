@@ -49,7 +49,7 @@
   "block.projectivemagistry.ash_slab": "Ash Slab",
   "block.projectivemagistry.ash_fence": "Ash Fence",
   "block.projectivemagistry.ash_fence_gate": "Ash Fence Gate",
-  "block.projectivemagistry.ash_wall": "ASH Wall",
+  "block.projectivemagistry.ash_wall": "Ash Wall",
   "block.projectivemagistry.ash_button": "Ash Button",
   "block.projectivemagistry.ash_pressure_plate": "Ash Pressure Plate",
   "block.projectivemagistry.ash_door": "Ash Door",
@@ -86,6 +86,10 @@
   "block.projectivemagistry.yew_pressure_plate": "Yew Pressure Plate",
   "block.projectivemagistry.yew_door": "Yew Door",
   "block.projectivemagistry.yew_trapdoor": "Yew Trapdoor",
+
+  "painting.projectivemagistry.world.title": "Shrek Mike Wazowski",
+  "painting.projectivemagistry.world.author": "madgeik",
+
 
 
   "itemgroup.projectivemagistry.projective_magistry_items": "Projective Magistry"

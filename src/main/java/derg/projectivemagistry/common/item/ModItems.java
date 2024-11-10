@@ -71,6 +71,21 @@ public class ModItems {
             entries.add(SILVER_NUGGET);
 
                 });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(SILVER_SWORD);
+
+
+        });
+
+
+
+
+
+
+
+
+
+
     }
     public static void registerModItems() {
         ProjectiveMagistry.LOGGER.info("Registering Mod Items For " + ProjectiveMagistry.MOD_ID);
