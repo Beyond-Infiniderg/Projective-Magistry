@@ -30,6 +30,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DOG_TONGUE);
                         entries.add(ModItems.SILVER_SWORD);
                         entries.add(ModItems.LEYLINE_CRYSTAL);
+                        entries.add(ModItems.PENIS_EEK_MUSIC_DISK);
 
                         entries.add(ModBlocks.LEYLINE_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.SILVER_BLOCK);
@@ -96,6 +97,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.YEW_DOOR);
                         entries.add(ModBlocks.YEW_TRAPDOOR);
                         entries.add(ModBlocks.ANCIENT_PEDESTAL);
+
 
 
                     }).build());

@@ -15,6 +15,8 @@
   "item.projectivemagistry.demon_heart": "Demon Heart",
   "item.projectivemagistry.dog_tongue": "Dog Tongue",
   "item.projectivemagistry.blood_vial": "Blood Vial",
+  "item.projectivemagistry.penis_eek_disc": "The Nut (Eek!) Music Disc",
+  "item.projectivemagistry.penis_eek_disc.desc": "Surasshu - The Nut (Eek!)",
 
   "block.projectivemagistry.leyline_crystal_block": "Leyline Crystal Block",
   "block.projectivemagistry.ancient_pedestal": "Ancient Pedestal",
@@ -86,6 +88,7 @@
   "block.projectivemagistry.yew_pressure_plate": "Yew Pressure Plate",
   "block.projectivemagistry.yew_door": "Yew Door",
   "block.projectivemagistry.yew_trapdoor": "Yew Trapdoor",
+
 
 
   "itemgroup.projectivemagistry.projective_magistry_items": "Projective Magistry"

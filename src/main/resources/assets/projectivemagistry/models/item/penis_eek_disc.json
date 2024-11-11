@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "projectivemagistry:item/penis_eek_disc"
+  }
+}
