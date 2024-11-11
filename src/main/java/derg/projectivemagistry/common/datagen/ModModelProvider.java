@@ -2,6 +2,7 @@ package derg.projectivemagistry.common.datagen;
 
 
 import derg.projectivemagistry.common.block.ModBlocks;
+import derg.projectivemagistry.common.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
@@ -92,10 +93,8 @@ public class ModModelProvider extends FabricModelProvider {
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
+        itemModelGenerator.register(ModItems.SILVER_SWORD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEMON_HEART, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SILVER_NUGGET, Models.GENERATED);
     }
-//    @Override
-//    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-//
-//    }
 }

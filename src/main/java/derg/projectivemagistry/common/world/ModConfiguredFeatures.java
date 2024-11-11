@@ -33,7 +33,7 @@ public class ModConfiguredFeatures  {
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
     register(context, ASH_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
         BlockStateProvider.of(ModBlocks.ASH_LOG),
-        new StraightTrunkPlacer(5,6,3  ),
+        new StraightTrunkPlacer(5,2,3  ),
         BlockStateProvider.of(ModBlocks.ASH_LEAVES),
         new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),3),
         new TwoLayersFeatureSize(1,0,2)).build());
@@ -41,24 +41,24 @@ public class ModConfiguredFeatures  {
 //decides how the tre as a whole looks like its hieght and shit
         register(context, HAZEL_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
             BlockStateProvider.of(ModBlocks.HAZEL_LOG),
-                new StraightTrunkPlacer(4,4,9  ),
+                new StraightTrunkPlacer(3,2,1  ),
                 BlockStateProvider.of(ModBlocks.HAZEL_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),3),
-                new TwoLayersFeatureSize(1,0,2)).build());
+                new BlobFoliagePlacer(ConstantIntProvider.create(3),ConstantIntProvider.create(2),3),
+                new TwoLayersFeatureSize(1,1,2)).build());
 
         register(context, HOLLY_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.HOLLY_LOG),
-                new StraightTrunkPlacer(4,6,7  ),
+                new StraightTrunkPlacer(4,2,1  ),
                 BlockStateProvider.of(ModBlocks.HOLLY_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),3),
-                new TwoLayersFeatureSize(1,0,2)).build());
+                new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(2),2),
+                new TwoLayersFeatureSize(1,0,1)).build());
 
         register(context, YEW_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.YEW_LOG),
-                new StraightTrunkPlacer(4,8,14  ),
+                new StraightTrunkPlacer(5,3,2  ),
                 BlockStateProvider.of(ModBlocks.YEW_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),6),
-                new TwoLayersFeatureSize(1,0,2)).build());
+                new TwoLayersFeatureSize(1,0,3)).build());
 
         RuleTest stoneReplaceables= new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables= new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);

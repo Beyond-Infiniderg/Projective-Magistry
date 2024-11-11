@@ -15,7 +15,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
-import static derg.projectivemagistry.common.item.ModItems.SILVER_NUGGET;
 
 public class ModBlocks {
     public static final Block LEYLINE_CRYSTAL_BLOCK =registerBlock("leyline_crystal_block",

@@ -16,7 +16,7 @@ public class ModTreeGeneration {
 //the spawned in savanna
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SAVANNA),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.HAZEL_PLACED_KEY);
-//theyspawn in savanna
+//they spawn in savanna
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.TAIGA),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.HOLLY_PLACED_KEY);
 
