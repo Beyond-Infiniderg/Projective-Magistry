@@ -1,4 +1,4 @@
-package derg.projectivemagistry;
+package derg.projectivemagistry.renderer;
 
 import derg.projectivemagistry.common.block.entity.Pedestal.AncientPedestalBlockEntity;
 import net.minecraft.client.MinecraftClient;

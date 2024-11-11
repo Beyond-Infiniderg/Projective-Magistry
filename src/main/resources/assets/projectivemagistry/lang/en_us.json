@@ -15,6 +15,8 @@
   "item.projectivemagistry.demon_heart": "Demon Heart",
   "item.projectivemagistry.dog_tongue": "Dog Tongue",
   "item.projectivemagistry.blood_vial": "Blood Vial",
+  "item.projectivemagistry.penis_eek_disc": "The Nut (Eek!) Music Disc",
+  "item.projectivemagistry.penis_eek_disc.desc": "Surasshu - The Nut (Eek!)",
 
   "block.projectivemagistry.leyline_crystal_block": "Leyline Crystal Block",
   "block.projectivemagistry.ancient_pedestal": "Ancient Pedestal",
@@ -93,6 +95,7 @@
   "painting.projectivemagistry.world.author": "Mitsuyoshi Sonoda",
   "painting.prjoectivemagistry.world.title": "Big Chungus",
   "painting.projectivemagistry.world.author": "Loony Tunes",
+
 
 
   "itemgroup.projectivemagistry.projective_magistry_items": "Projective Magistry"

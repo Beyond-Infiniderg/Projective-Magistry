@@ -1,6 +1,7 @@
 package derg.projectivemagistry.common.item;
 
 import derg.projectivemagistry.ProjectiveMagistry;
+import derg.projectivemagistry.common.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -61,6 +62,9 @@ public class ModItems {
     );
     public static final Item LEYLINE_CRYSTAL = register(
             new Item(new Item.Settings()), "leyline_crystal"
+    );
+    public static final Item PENIS_EEK_MUSIC_DISK = register(
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.PENIS_EEK_KEY).maxCount(1)), "penis_eek_disc"
     );
     public static void initialize() {
         // Get the event for modifying entries in the ingredients group.
