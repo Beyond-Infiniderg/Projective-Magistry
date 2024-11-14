@@ -320,5 +320,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .criterion(hasItem(ModItems.SILVER_INGOT), conditionsFromItem(ModItems.SILVER_INGOT))
                 .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "silver_sword"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASH_WOOD)
+                .pattern("   ")
+                .pattern(" bb")
+                .pattern(" bb")
+                .input('b', ModBlocks.ASH_LOG)
+                .criterion(hasItem(ModBlocks.ASH_LOG), conditionsFromItem(ModBlocks.ASH_LOG))
+                .offerTo(exporter, Identifier.of(ProjectiveMagistry.MOD_ID, "ash_wood"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HOLLY_WOOD, 3)
+                .pattern("   ")
+                .pattern(" bb")
+                .pattern(" bb")
+                .input('b', ModBlocks.HOLLY_LOG)
+                .criterion(hasItem(ModBlocks.HOLLY_LOG), conditionsFromItem(ModBlocks.HOLLY_LOG))
+                .offerTo(exporter, Identifier.of(ProjectiveMagistry.MOD_ID, "holly_wood"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HAZEL_WOOD, 3)
+                .pattern("   ")
+                .pattern(" bb")
+                .pattern(" bb")
+                .input('b', ModBlocks.HAZEL_LOG)
+                .criterion(hasItem(ModBlocks.HAZEL_LOG), conditionsFromItem(ModBlocks.HAZEL_LOG))
+                .offerTo(exporter, Identifier.of(ProjectiveMagistry.MOD_ID, "hazel_wood"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YEW_WOOD, 3)
+                .pattern("   ")
+                .pattern(" bb")
+                .pattern(" bb")
+                .input('b', ModBlocks.YEW_LOG)
+                .criterion(hasItem(ModBlocks.YEW_LOG), conditionsFromItem(ModBlocks.YEW_LOG))
+                .offerTo(exporter, Identifier.of(ProjectiveMagistry.MOD_ID, "yew_wood"));
+
     }
 }
