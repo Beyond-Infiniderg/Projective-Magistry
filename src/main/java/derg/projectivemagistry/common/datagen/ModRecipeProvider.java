@@ -2,6 +2,7 @@ package derg.projectivemagistry.common.datagen;
 
 import derg.projectivemagistry.ProjectiveMagistry;
 import derg.projectivemagistry.common.block.ModBlocks;
+import derg.projectivemagistry.common.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -309,5 +310,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.YEW_PLANKS)
                 .criterion(hasItem(ModBlocks.YEW_PLANKS), conditionsFromItem(ModBlocks.YEW_PLANKS))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SILVER_SWORD,1)
+
+                .pattern("  s")
+                .pattern("  s")
+                .pattern("  b")
+                .input('s', ModItems.SILVER_INGOT)
+                .input('b', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.SILVER_INGOT), conditionsFromItem(ModItems.SILVER_INGOT))
+                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "silver_sword"));
     }
 }

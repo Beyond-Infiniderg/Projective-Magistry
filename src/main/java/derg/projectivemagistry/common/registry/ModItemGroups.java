@@ -31,6 +31,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SILVER_SWORD);
                         entries.add(ModItems.LEYLINE_CRYSTAL);
 
+                        entries.add(ModItems.PENIS_EEK_MUSIC_DISK);
+
                         entries.add(ModBlocks.LEYLINE_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.SILVER_BLOCK);
                         entries.add(ModBlocks.RAW_SILVER_BLOCK);

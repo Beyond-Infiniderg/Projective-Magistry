@@ -11,7 +11,9 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
@@ -33,12 +35,16 @@ public class ModConfiguredFeatures  {
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
     register(context, ASH_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
         BlockStateProvider.of(ModBlocks.ASH_LOG),
-        new StraightTrunkPlacer(5,2,3  ),
+        new StraightTrunkPlacer(5,2,3),
         BlockStateProvider.of(ModBlocks.ASH_LEAVES),
-        new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(3),3),
-        new TwoLayersFeatureSize(1,0,2)).build());
+            new SpruceFoliagePlacer(
+                    ConstantIntProvider.create(3),  // Base radius of the foliage cone
+                    ConstantIntProvider.create(4),  // Cone height, adjust to make it taller or shorter
+                    UniformIntProvider.create(4, 6) // Height variation for a natural cone shape
+            ),
+        new TwoLayersFeatureSize(3,0,2)).build());
 
-//decides how the tre as a whole looks like its hieght and shit
+//decides how the tre as a whole looks like its hieght and stuff
         register(context, HAZEL_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
             BlockStateProvider.of(ModBlocks.HAZEL_LOG),
                 new StraightTrunkPlacer(3,2,1  ),

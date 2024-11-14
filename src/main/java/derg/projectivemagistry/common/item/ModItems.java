@@ -5,6 +5,7 @@ import derg.projectivemagistry.common.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -31,7 +32,10 @@ public class ModItems {
             new Item(new Item.Settings()), "silver_nugget"
     );
     public static final Item SILVER_SWORD = register(
-            new Item(new Item.Settings()), "silver_sword"
+            new SwordItem(ModToolMaterials.SILVER,
+                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.SILVER, 3, -2.6f))
+
+            ), "silver_sword"
     );
     public static final Item ATHAME = register(
             new Item(new Item.Settings()), "athame"

@@ -11,6 +11,7 @@ import java.util.concurrent.CompletableFuture;
 public class ModblockTagProvider extends FabricTagProvider.BlockTagProvider {
     public ModblockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
+
     }
 
     @Override
