@@ -30,15 +30,15 @@ public class ProjectiveMagistry implements ModInitializer {
 		ModWorldGeneration.generateModWorldGeneration();
 		registerFlammables();
 		System.out.println("Registering ASH_SAPLING in composter with chance " + ModBlocks.ASH_SAPLING);
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.ASH_SAPLING,0.3f);
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.HOLLY_SAPLING,0.3f);
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.HAZEL_SAPLING,0.3f);
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.YEW_SAPLING,0.3f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.ASH_SAPLING.asItem(),0.3f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.HOLLY_SAPLING.asItem(),0.3f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.HAZEL_SAPLING.asItem(),0.3f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.YEW_SAPLING.asItem(),0.3f);
 
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.ASH_LEAVES,0.3f);
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.HOLLY_LEAVES,0.3f);
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.HAZEL_LEAVES,0.3f);
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.YEW_LEAVES,0.3f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.ASH_LEAVES.asItem(),0.3f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.HOLLY_LEAVES.asItem(),0.3f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.HAZEL_LEAVES.asItem(),0.3f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.YEW_LEAVES.asItem(),0.3f);
 
 		LOGGER.info("Loading Projective Magistry!");
 
