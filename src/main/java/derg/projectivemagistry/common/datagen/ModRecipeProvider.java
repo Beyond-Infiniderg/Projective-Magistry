@@ -352,6 +352,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('b', ModBlocks.YEW_LOG)
                 .criterion(hasItem(ModBlocks.YEW_LOG), conditionsFromItem(ModBlocks.YEW_LOG))
                 .offerTo(exporter, Identifier.of(ProjectiveMagistry.MOD_ID, "yew_wood"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ATHAME,1)
+
+                .pattern("  ")
+                .pattern("  s")
+                .pattern("  b")
+                .input('s', ModItems.SILVER_INGOT)
+                .input('b', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.SILVER_INGOT), conditionsFromItem(ModItems.SILVER_INGOT))
+                .offerTo(exporter,Identifier.of(ProjectiveMagistry.MOD_ID, "athame"));
 
     }
 }
